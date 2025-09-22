@@ -55,9 +55,10 @@ fun Play(context: ComponentActivity, modifier: Modifier = Modifier) {
             .fillMaxSize()
             .pointerInput(Unit) { // 新增 pointerInput
                 detectTapGestures(
-                    onTap = {
-                        // 顯示 Toast 訊息
-                        Toast.makeText(context, "螢幕觸控( 劉宇崴 )", Toast.LENGTH_SHORT).show()
+                    onTap = { offset ->
+                        val x = offset.x
+                        val y = offset.y
+                        Toast.makeText(context, "螢幕觸控: X=${x.toInt()}, Y=${y.toInt()} ( 劉宇崴 )", Toast.LENGTH_SHORT).show()
                     }
                 )
             },
