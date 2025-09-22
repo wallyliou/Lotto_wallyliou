@@ -43,7 +43,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
 @Composable
 fun Play(context: ComponentActivity, modifier: Modifier = Modifier) {
     var lucky by remember {
