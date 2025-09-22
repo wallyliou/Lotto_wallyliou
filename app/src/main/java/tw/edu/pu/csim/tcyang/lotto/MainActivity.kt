@@ -78,7 +78,6 @@ fun Play(context: ComponentActivity, modifier: Modifier = Modifier) {
         }
     }
 }
-
 // 預覽功能中因無法取得 Context，所以移除 context 參數
 @Preview(showBackground = true)
 @Composable
